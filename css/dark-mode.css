@@ -1,0 +1,33 @@
+
+ :root:has(.mode input:checked){
+    --primary-hue:35;
+    --primary-lightness:44%;
+    --primary-saturation:72%;
+    --light-hue:0;
+    --light-saturation:0%;
+    --light-lightness:9%;
+    --color-default:#fff;
+    --color-secondary:#fff;
+    --color-tertiary:#9f9f9f;
+    --color-light-grey:#252525;
+ }
+ body:has(.mode input:checked){
+   background-color:#202020 ;
+ }
+ body:has(.mode input:checked) .card picture::before{
+     background-image: url(../images/team-shape-dark.svg);
+ }
+ body:has(.mode input:checked) .light{
+    display: block;
+ }
+ body:has(.mode input:checked) .dark{
+    display: none;
+ }
+/* 
+body:has(.home:target):has(.mode input:checked) .home-link,
+body:has(.chefs:target):has(.mode input:checked) .chef-link,
+body:has(.gallary:target):has(.mode input:checked) .gallary-link,
+body:has(.contact:target):has(.mode input:checked) .contact-link ,
+body:not(:has(:target)):has(.mode input:checked) .home-link{
+  color: #fff;
+} */
